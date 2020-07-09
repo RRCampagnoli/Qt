@@ -1,0 +1,5 @@
+Crie o repositório no github e clone ele
+Ex: git clone https://github.com/RRCampagnoli/Qt_introducao.git
+Crie um novo projeto no repositório clonado
+Commit e push direto no Qt Creator
+
