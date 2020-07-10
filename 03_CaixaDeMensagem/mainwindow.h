@@ -15,6 +15,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_bt_cxMsgAbout_clicked();
+
+    void on_bt_cxMsgAboutQt_clicked();
+
+    void on_bt_cxMsgCritical_clicked();
+
+    void on_bt_cxMsgInformation_clicked();
+
+    void on_bt_cxMsgQUestion_clicked();
+
+    void on_bt_cxMsgWarning_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
