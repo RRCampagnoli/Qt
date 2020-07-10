@@ -13,3 +13,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_bt_alterarTexto_clicked()
+{
+    if(ui->lb_texto->text().compare("Não alterado") == 0)
+        ui->lb_texto->setText("Alterado");
+    else
+        ui->lb_texto->setText("Não alterado");
+
+}
