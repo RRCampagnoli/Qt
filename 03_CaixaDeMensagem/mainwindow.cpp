@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include <QStandardItem>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -38,7 +39,12 @@ void MainWindow::on_bt_cxMsgInformation_clicked()
 
 void MainWindow::on_bt_cxMsgQUestion_clicked()
 {
-    QMessageBox::question(this, "Pergunta", "Caixa de Mensagem QMessageBox::question!!!");
+    QMessageBox::StandardButton resposta = QMessageBox::question(this, "Pergunta", "Caixa de Mensagem QMessageBox::question!!!", QMessageBox::Yes | QMessageBox::No);
+
+    if(resposta == QMessageBox::Yes)
+        close();
+    else
+        qDebug() << "Usuário clicou em não fechar";
 }
 
 void MainWindow::on_bt_cxMsgWarning_clicked()
