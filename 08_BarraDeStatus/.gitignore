@@ -71,23 +71,3 @@ Thumbs.db
 *.dll
 *.exe
 
-
-01_projeto_introdução/build-Introducao-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-01_EventoClickedBotao-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-02_SinaisESlots-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-03_CaixaDeMensagem-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-04_Layout-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-05_AbrirNovosFormularios-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-06_ArmazenarDadosForm-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-07_ImagemEmForms-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-08_BarraDeEstatus-Desktop_Qt_5_15_0_GCC_64bit-Debug/
-
-build-08_BarraDeStatus-Desktop_Qt_5_15_0_GCC_64bit-Debug/
