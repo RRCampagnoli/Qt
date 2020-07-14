@@ -16,9 +16,12 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_4_clicked();
+    void on_bt_styleSheetMainWindow_clicked();
+    void on_bt_styleSheetSlotButton_clicked();
 
-    void on_pushButton_2_clicked();
+    void mudarTextoLabel();
+
+
 
 private:
     Ui::MainWindow *ui;

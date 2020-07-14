@@ -7,7 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    connect(ui->pushButton_3, SIGNAL(clicked()), this, SLOT(showNormal()));
+    connect(ui->bt_showNormal, SIGNAL(clicked()), this, SLOT(showNormal()));
+    connect(ui->bt_changeTextLabel, SIGNAL(clicked()), this, SLOT(mudarTextoLabel()));
 }
 
 MainWindow::~MainWindow()
@@ -15,14 +16,21 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_bt_styleSheetMainWindow_clicked()
+{
+    this->setStyleSheet("background-color:#f00");
+}
+
+void MainWindow::on_bt_styleSheetSlotButton_clicked()
 {
     QString css = "background-color:#f00;color:#000";
     ui->label->setStyleSheet(css);
 }
 
-void MainWindow::on_pushButton_4_clicked()
+void MainWindow::mudarTextoLabel()
 {
-    this->setStyleSheet("background-color:#f00");
+    if(ui->label_2->text().compare("Texto inicial") == 0)
+        ui->label_2->setText("Texto alterado");
+    else
+        ui->label_2->setText("Texto inicial");
 }
-

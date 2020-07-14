@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>499</width>
-    <height>170</height>
+    <width>517</width>
+    <height>168</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="bt_close">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>10</y>
+      <x>130</x>
+      <y>100</y>
       <width>231</width>
       <height>24</height>
      </rect>
@@ -27,11 +27,11 @@
      <string>CloseEdit Signal/Slot F4</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="bt_styleSheetSlotButton">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>10</y>
+      <x>240</x>
+      <y>0</y>
       <width>171</width>
       <height>24</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>50</y>
+      <x>420</x>
+      <y>0</y>
       <width>58</width>
       <height>16</height>
      </rect>
@@ -57,11 +57,11 @@ color: #fff</string>
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="bt_showNormal">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>70</y>
+      <x>0</x>
+      <y>30</y>
       <width>231</width>
       <height>24</height>
      </rect>
@@ -70,11 +70,11 @@ color: #fff</string>
      <string>ShowNormal connect Signal to Slot</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="bt_styleSheetMainWindow">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>100</y>
+      <x>0</x>
+      <y>60</y>
       <width>231</width>
       <height>24</height>
      </rect>
@@ -83,11 +83,11 @@ color: #fff</string>
      <string>StyleSheet MainWindow slot button</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="bt_showMaximized">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>40</y>
+      <x>0</x>
+      <y>0</y>
       <width>231</width>
       <height>24</height>
      </rect>
@@ -96,13 +96,40 @@ color: #fff</string>
      <string>ShowMaximized Edit Signal/Slot F4</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="bt_changeTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Change Text Label 
+connect SignalSlot</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Texto inicial</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>499</width>
+     <width>517</width>
      <height>21</height>
     </rect>
    </property>
@@ -112,14 +139,14 @@ color: #fff</string>
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton</sender>
+   <sender>bt_close</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>63</x>
-     <y>53</y>
+     <x>633</x>
+     <y>43</y>
     </hint>
     <hint type="destinationlabel">
      <x>132</x>
@@ -128,7 +155,7 @@ color: #fff</string>
    </hints>
   </connection>
   <connection>
-   <sender>pushButton_5</sender>
+   <sender>bt_showMaximized</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>showMaximized()</slot>
