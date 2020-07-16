@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>imagens/marvel-avengers-wallpaper-png-clip-art.png</file>
+        <file>imagens/unnamed.png</file>
+    </qresource>
+    <qresource prefix="/sons"/>
+</RCC>
