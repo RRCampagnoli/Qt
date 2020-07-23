@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/ico">
+        <file>ico/novo.png</file>
+        <file>ico/abrir.png</file>
+        <file>ico/imprimir.png</file>
+        <file>ico/sair.png</file>
+        <file>ico/salvar.png</file>
+        <file>ico/salvarComo.png</file>
+        <file>ico/copiar.png</file>
+        <file>ico/colar.png</file>
+        <file>ico/cortar.png</file>
+        <file>ico/excluir.png</file>
+        <file>ico/pesquisar.png</file>
+        <file>ico/selecionarTudo.png</file>
+    </qresource>
+</RCC>
