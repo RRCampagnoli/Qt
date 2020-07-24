@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/ico">
+        <file>ico/endereco1.png</file>
+        <file>ico/endereco2.png</file>
+        <file>ico/endereco3.png</file>
+    </qresource>
+</RCC>
