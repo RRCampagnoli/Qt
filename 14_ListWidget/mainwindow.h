@@ -15,6 +15,16 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_btn_adicionar_clicked();
+
+    void on_btn_adicionarTodos_clicked();
+
+    void on_btn_transferirSelecionado_clicked();
+
+
+    void on_btn_transferirTodos_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
