@@ -13,10 +13,73 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tbc_telaPrincipal">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="graficos">
+       <attribute name="icon">
+        <iconset resource="arquivoRecursos.qrc">
+         <normaloff>:/ico/ico/graficos.png</normaloff>:/ico/ico/graficos.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Gráficos</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="config">
+       <attribute name="icon">
+        <iconset resource="arquivoRecursos.qrc">
+         <normaloff>:/ico/ico/config.png</normaloff>:/ico/ico/config.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Config</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNova_aba"/>
+    <addaction name="actionNova_aba_cadastro"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNova_aba">
+   <property name="text">
+    <string>Nova aba</string>
+   </property>
+  </action>
+  <action name="actionNova_aba_cadastro">
+   <property name="text">
+    <string>Nova aba cadastro</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="arquivoRecursos.qrc"/>
+ </resources>
  <connections/>
 </ui>

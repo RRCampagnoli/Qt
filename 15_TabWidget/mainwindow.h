@@ -15,6 +15,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_tbc_telaPrincipal_tabCloseRequested(int index);
+
+    void on_tbc_telaPrincipal_tabBarDoubleClicked(int index);
+
+    void on_actionNova_aba_triggered();
+
+    void on_actionNova_aba_cadastro_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -15,8 +15,12 @@ public:
     explicit DialogMudarNomeAba(QWidget *parent = nullptr);
     ~DialogMudarNomeAba();
 
+    QString obterNomeEscolhido();
+
+private slots:
+
 private:
-    Ui::DialogMudarNomeAba *ui;
+    Ui::DialogMudarNomeAba *ui;    
 };
 
 #endif // DIALOGMUDARNOMEABA_H

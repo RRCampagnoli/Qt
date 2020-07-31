@@ -1,2 +1,6 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/ico">
+        <file>ico/config.png</file>
+        <file>ico/graficos.png</file>
+    </qresource>
+</RCC>
